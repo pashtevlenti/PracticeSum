@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.itis.summerpractice.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_schoolFragment"
+            app:destination="@id/schoolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schoolFragment"
+        android:name="ru.itis.summerpractice.SchoolFragment"
+        android:label="fragment_school"
+        tools:layout="@layout/fragment_school" >
+        <action
+            android:id="@+id/action_schoolFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_schoolFragment_to_acceptMessageFragment"
+            app:destination="@id/acceptMessageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.itis.summerpractice.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsPhoneFragment"
+        android:name="ru.itis.summerpractice.SettingsPhoneFragment"
+        android:label="fragment_settings_phone"
+        tools:layout="@layout/fragment_settings_phone" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="ru.itis.summerpractice.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_settingsPhoneFragment"
+            app:destination="@id/settingsPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acceptMessageFragment"
+        android:name="ru.itis.summerpractice.AcceptMessageFragment"
+        android:label="fragment_accept_message"
+        tools:layout="@layout/fragment_accept_message" />
+</navigation>

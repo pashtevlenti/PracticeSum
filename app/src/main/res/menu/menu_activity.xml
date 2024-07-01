@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="home" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="settings" />
+
+    <item
+        android:id="@+id/settingsPhoneFragment"
+        android:icon="@drawable/baseline_settings_phone_24"
+        android:title="phone" />
+
+    <item
+        android:id="@+id/schoolFragment"
+        android:icon="@drawable/baseline_school_24"
+        android:title="school" />
+    <item
+        android:id="@+id/shopFragment"
+        android:icon="@drawable/baseline_shop_24"
+        android:title="shop" />
+</menu>
