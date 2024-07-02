@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.RequestManager
 import ru.itis.summerpractice.databinding.FragmentAcceptMessageBinding
 import ru.itis.summerpractice.databinding.FragmentHomeBinding
 
 class AcceptMessageFragment : Fragment(R.layout.fragment_accept_message){
     private var binding : FragmentAcceptMessageBinding? = null
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

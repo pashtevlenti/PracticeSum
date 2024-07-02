@@ -21,8 +21,6 @@ class SchoolFragment : Fragment(R.layout.fragment_school) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSchoolBinding.bind(view)
 
-
-
         binding?.run {
             var flag = false
             button.setOnClickListener {

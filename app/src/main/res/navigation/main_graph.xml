@@ -24,10 +24,10 @@
         <action
             android:id="@+id/action_schoolFragment_to_acceptMessageFragment"
             app:destination="@id/acceptMessageFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -51,10 +51,26 @@
         <action
             android:id="@+id/action_shopFragment_to_settingsPhoneFragment"
             app:destination="@id/settingsPhoneFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_acceptBookFragment"
+            app:destination="@id/acceptBookFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/acceptMessageFragment"
         android:name="ru.itis.summerpractice.AcceptMessageFragment"
         android:label="fragment_accept_message"
         tools:layout="@layout/fragment_accept_message" />
+    <fragment
+        android:id="@+id/acceptBookFragment"
+        android:name="ru.itis.summerpractice.AcceptBookFragment"
+        android:label="fragment_accept_book"
+        tools:layout="@layout/fragment_accept_book" >
+        <action
+            android:id="@+id/action_acceptBookFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
 </navigation>
